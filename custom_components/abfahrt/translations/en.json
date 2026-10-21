@@ -1,0 +1,30 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Abfahrt Transit API",
+        "description": "Enter your API key and location. Get a key at api.abfahrt.now/home-assistant",
+        "data": {
+          "api_key": "API Key",
+          "latitude": "Latitude",
+          "longitude": "Longitude",
+          "radius": "Search radius (meters)",
+          "stops": "Stop IDs (optional, comma-separated)",
+          "scan_interval": "Update interval (seconds)"
+        },
+        "data_description": {
+          "api_key": "Your Abfahrt API key (starts with pbl_)",
+          "stops": "Leave empty for radius-based search, or enter specific stop IDs from the stations list"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to Abfahrt API",
+      "invalid_auth": "Invalid API key",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This location is already configured"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mit der Abfahrt-API verbinden",
+        "description": "Gib deinen API-Schlüssel und deinen Standort ein. Einen Schlüssel bekommst du unter api.abfahrt.now/home-assistant",
+        "data": {
+          "api_key": "API-Schlüssel",
+          "latitude": "Breitengrad",
+          "longitude": "Längengrad",
+          "radius": "Suchradius (Meter)",
+          "stops": "Haltestellen-IDs (optional, durch Komma getrennt)",
+          "scan_interval": "Abfrageintervall (Sekunden)"
+        },
+        "data_description": {
+          "api_key": "Dein Abfahrt-API-Schlüssel (beginnt mit pbl_)",
+          "stops": "Leer lassen für die Suche im Radius, oder bestimmte Haltestellen-IDs aus der Liste stations eintragen"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung zur Abfahrt-API fehlgeschlagen",
+      "invalid_auth": "Ungültiger API-Schlüssel",
+      "unknown": "Unerwarteter Fehler"
+    },
+    "abort": {
+      "already_configured": "Dieser Standort ist bereits eingerichtet"
+    }
+  }
+}
